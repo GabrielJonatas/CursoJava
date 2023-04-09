@@ -1,0 +1,109 @@
+Operadores aritméticos
+Precedência: 1º: * / % , 2º + -
+
+------------------------------------------------------------------------------
+
+Variáveis - Tipos básicos em Java
+
+Definição informal: Em programação, uma variável é uma porção de memória (RAM) utilizada 
+para armazenar dados durante a execução dos programas.
+
+Declaração de variáveis
+
+Sintaxe:
+
+<tipo> <nome> = <valor inicial> (opcional);
+
+Exemplo:
+	int idade = 25;
+      double altura = 1.68; (float)
+	char sexo = 'F'; (caractere unicode)
+
+Uma variável possui:
+
+- Nome(ou identificador)
+- Tipo
+- Valor
+- Endereço
+
+ unicode-table.com -> site que armazena todos os códigos unicode para cada caractere
+String - cadeia de caracteres(palavras ou textos)
+
+Regras para nomes de variáveis
+Não pode começar com dígito: usa uma letra ou...
+Não pode ter espaço em branco
+Não usar acentos ou til
+Sugestão: use o padrão "camel case" -> CamelCase
+
+------------------------------------------------------------------------
+
+Um programa de computador executa as três operações abaixo:
+
+Entrada de dados -> Processamento de dados -> Saída de dados
+
+Entrada de dados: O usuário informa dados para o programa (são guardados em variáveis)
+Operação também chamada de leitura
+
+Processamento de dados: O programa realiza os cálculos
+Processamento de dados se dá por um comando chamado ATRIBUIÇÃO
+
+Saída de dados: O programa informa os dados para o usuário
+Operação também chamada de escrita
+
+
+-------------------------------------------------------------------------
+
+Para escrever na tela um texto qualquer
+
+Sem quebra de linha ao final:
+
+System.out.print("Bom dia!");
+
+Com quebra de linha ao final:
+
+System.out.println("Bom dia!");
+
+------------------------------------------------------------------------
+
+Processamento de dados -> Comando de atribuição
+
+Sintaxe: <Variável> ( = <-lê-se recebe) <expressão>
+
+Regra: 1) A expressão é calculada, 2) O resultado da expressão é armazenado na variável
+
+Na linguagem Java, é possível se atribuir o valor de um tipo de variável a outro tipo de variável, 
+porém para tal é necessário que esta operação seja apontada ao compilador. 
+A este apontamento damos o nome de casting.
+
+------------------------------------------------------------------------
+
+Scanner
+
+Para fazer entradas de dados, nós vamos criar um objeto do tipo "Scanner" da seguinte forma:
+
+Scanner sc = new Scanner(System.in);
+
+Lembrando que deve ser incluido import java.util.Scanner; e sc.close() quando não precisar mais do objeto sc
+
+Para ler um texto até a quebra de linha, utilizamos o comando nextLine() para ler a linha inteira, caso seja só a palavra, utilizamos next()
+
+Quando você usa um comando de leitura diferente do nextLine() e dá alguma quebra de linha,
+essa quebra de linha fica "pendente" na entrada padrão.
+
+----------------------------------------------------------------------
+
+Funções matemáticas em Java
+A = Math.sqrt(x);  <-- Variável A recebe a raiz quadrada de x
+A = Math.pow(x,y); <-- Variável A recebe o resultado de x elevado a y
+A = Math.abs(x);   <-- Variável A recebe o valor absoluto de x
+
+Para mais informações, acessar java.lang.Math
+
+
+
+
+
+
+
+
+

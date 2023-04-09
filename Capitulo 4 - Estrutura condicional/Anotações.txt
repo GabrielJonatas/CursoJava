@@ -1,0 +1,35 @@
+Expressões comparativas => comparam argumentos
+
+Devolvem verdadeiro ou false (true or false)
+
+Operadores comparativos em C,C++,Java,C#
+
+> - maior
+< - menor
+>= - maior ou igual
+<= - menor ou igual
+== - igual
+!= - diferente
+
+------------------------------------------------
+
+Expressões lógicas
+
+São avaliadas e devolvem verdadeiro ou falso (true or false)
+
+&& - E (And)
+|| - OU (Or)
+! - NÃO (Not)
+
+------------------------------------------------
+
+Estrutura condicional (if-else)
+
+Estrutura condicional é uma estrutura de controle que permite definir que um certo 
+bloco de comandos somente será executado dependendo de uma condição
+
+Simples
+if (<condição>) {
+	<comando 1>
+	<comando 2>
+}
