@@ -71,3 +71,17 @@ Comentários
 
 Comentário de bloco /**/
 Comentário de linha //
+
+--------------------------------
+
+Funções
+
+Representam um processamento que possui significado, ou seja, é um procedimento que possui significado.
+
+Principais vantagens: modularização, delegação e reaproveitamento
+
+Podem receber dados de entrada
+Podem ou não retornar uma saída
+
+Em orientação a objetos, funções em classes recebem o nome de "métodos"
+
