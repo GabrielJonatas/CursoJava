@@ -33,3 +33,65 @@ if (<condição>) {
 	<comando 1>
 	<comando 2>
 }
+
+composta
+if (<condição>) {
+	<comando 1>
+	<comando 2>
+}
+else {
+	<comando 3>
+	<comando 4>
+}
+
+encadeamento
+if (<condição>) {
+	<comando 1>
+	<comando 2>
+}
+else if (<condição>) {
+	<comando 3>
+	<comando 4>
+}
+else {
+	<comando 5>
+	<comando 6>
+}
+
+--------------------------
+
+Estrutura condicional (opcionais)
+
+Switch-case
+
+switch (variavel) {
+case valor_possivel_da_variavel_1:
+	.....
+	break;
+case valor_possivel_da_variavel_2:
+	.....
+	break;
+case valor_possivel_da_variavel_3:
+	.....
+	break;
+default:
+	.....
+	break;
+}
+
+---------------------
+
+Ternária
+
+{ condição } ? valor_se_verdadeiro : valor_se_falso;
+
+-------------------------
+
+Escopo
+
+Escopo de uma variável: é a região do programa onde a variável é válida, ou seja, onde ela pode ser referenciada
+
+Uma variável não pode ser usada se não for iniciada (Java)
+
+
+

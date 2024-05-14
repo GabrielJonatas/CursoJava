@@ -1,0 +1,59 @@
+CTRL+SHIFT+F = FORMATA O CÓDIGO
+CTRL+SHIFT+O = IMPORTA BIBLIOTECA
+------------------------
+ 
+Como utilizar o Debug do Eclipse
+
+Para marcar uma linha de breakpoint:
+	Run-> Toggle Breakpoint
+Para iniciar o debug
+	botão direito na classe->debug as-> Java Application
+Para executar uma linha
+	F6 (Step over)
+Para interromper o debug
+	Terminate
+
+------------------------
+
+Estrutura repetitiva While
+
+É uma estrutura de controle que repete um bloco de comandos enquanto uma condição for veradeira
+
+Quando usar: quando não se sabe previamente a quantidade de repetições que será realizada.
+
+sintaxa/regra 
+
+while ( condição )  {
+	comando 1
+	comando 2
+}
+
+-------------------------
+
+Estrutura repetitiva for
+
+É uma estrutura de controle que repete um bloco de comandos para um certo intervalo de valores.
+
+Quando usar: quando se sabe previamente  a quantidade de repetições, ou o intervalo de valores.
+
+Sintaxe/regra
+
+for (inicio ; condição ; incremento) {
+	comando 1
+	comando 2
+}
+
+--------------------------
+
+Estrutura repetitiva do while
+
+Menos utilizada, mas em alguns casos se encaixa melhor ao problema.
+
+O bloco de comandos executa pelo menos uma vez, pois a condição é verificada no final.
+
+do {
+	comando 1
+	comando 2
+} while ( condição );
+
+ 
