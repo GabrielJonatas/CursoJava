@@ -84,3 +84,104 @@ Declarar vetor em java -> "tipo dos dados"[] "nome da variavel" = new "tipo dos 
 adicionar elementos no vetor -> "nome da variavel"[posicao no vetor]
 
 tamanho do vetor, propriedade do vetor -> "nome do vetor".length
+
+--------------------------------------------------------
+
+Boxing
+
+É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível
+
+Wrapper classes
+
+- São classes equivalentes aos tipos primitivos
+
+- Boxing e unboxing é natural na linguagem
+
+Uso comum: campos de entidades em sistemas de informação (IMPORTANTE!)
+- Pois tipos referência (classes) aceitam valor null e usufruem dos recursos OO
+
+Exemplo 
+
+public class Product {
+
+	public String name;
+	oublic Double price;
+	public Integer quantity;
+}
+
+Desse modo, os atributos name, price e quantity podem receber null como valor, pois classes são valores referência (estão referenciando null na memória heap)
+
+--------------------------------------------------------
+
+Laço "for each"
+
+Sintaxe opcional e simplificada para percorrer coleções
+
+Sintaxe:
+
+for(Tipo apelido: coleção) {
+	<comando 1>	
+	<comando 2>
+}
+
+Exemplo:
+
+String[] vect = new String[] {"Maria", "Bob", "Alex"};
+ 
+for (String obj: vect) {
+    System.out.println(obj);
+} 
+
+---------------------------------------------------------
+
+Listas
+
+Lista é uma estrutura de dados
+- Homogênea (dados do mesmo tipo)
+- Ordenada (elementos acessados por meio de posições)
+- Inicia vazia, e seus elementos são alocados sob demanda
+- Cada elemento ocupa um "nó" (ou nodo) da lista
+
+Tipo (interface): List
+- Classes que implementam: ArrayList, LinkedList, etc.
+
+Vantagens:
+- Tamanho variável
+- Facilidade para se realizar inserções e deleções
+
+Desvantagens:
+- Acesso sequencial aos elementos*
+
+-------------------------------------------------------
+
+Listas
+
+forma de declarar:
+
+List<Tipo> list = new ArrayList<Tipo(opcional)>();
+
+list.add(elem) -> adiciona elementos
+list.add(posição, elem) -> adiciona elementos, uma sobrecarga do método add
+list.size() -> devolve o tamanho da lista
+list.remove(elem) -> remove o elemento da lista
+list.removeif(predicado(expressão para a remoção): ex -> x -> x.charAt(0) == 'M')
+list.indexOf(posição do elemento)
+
+-------------------------------------------------------
+
+Matrizes
+
+Em programação, "matriz" é o nome dado a arranjos bidimensionais
+- Atenção: "vetor de vetores"
+
+Arranjo (array) é uma estrutura de dados
+- Homogênea (dados do mesmo tipo)
+- Ordenada (elementos acessados por meio de posições)
+- Alocada de uma vez só, em um bloco contíguo de memória
+
+Vantagens:
+- Acesso imediato aos elementos pela sua posição
+
+Desvantagens:
+- Tamanho fixo
+- Dificuldade para se realizar inserções e deleções
