@@ -1,0 +1,29 @@
+Código fonte: é aquele escrito pelo programador em linguagem de programação
+Código objeto: é aquele código compilado, após a analise léxica e sintática
+
+Os dois conceitos abaixo estão englobados na compilação
+Compilação é um processo que transforma o código fonte em código objeto, nesse processo
+é feito a análise léxica e sintática
+
+Construção (build) é um processo que transforma o código objeto em um código executável,
+ou seja, é gerado o código
+
+
+O conceito abaixo está englobado na Interpretação
+
+O interpretador lê o código e faz análise léxica, análise sintática e a geração de código
+traduzindo-o para código executável sob demanda
+
+
+Os conceitos abaixo estão englobados na Abordagem híbrida
+
+é feito uma precompilação do código fonte, após isso ele é nomeado Bytecode (vulgo código objeto)
+e após isso ele é interpretado por uma máquina virtual que gera o executável sob demanda
+ 
+
+Vantangens 
+
+Compilação: Velocidade do programa e auxilio do compilador antes da execução
+
+Interpretação: Flexibilidade de manutenção do aplicativo em produção, expressividade da linguagem,
+código fonte não precisa ser recompilado para rodar em plataformas diferentes

@@ -1,0 +1,187 @@
+Classes são tipo referência
+
+Variáveis cujo tipo são classes não devem ser entendidas como caixas, mas sim "tentáculos" (ponteiros) para caixas
+
+Ex:
+
+Product p1, p1;
+
+p1, p2 -> são alocados para a stack na memória
+
+p1 = new Product("TV", 900.00, 0);
+
+p1 -> é alocado para a Heap da memória (onde guarda objetos em tempo de execução)
+
+p1 armazena o endereço de memória da Heap onde está o objeto
+
+Valor "null"
+
+Tipos referência aceitam o valor "null", que indica que a variável aponta pra ninguém.
+
+Tipos primitivos são tipos valor
+
+Em Java, tipos primitivos são tipos valor. Tipos valor são CAIXAS e não ponteiros.
+
+Ex: 
+
+double x, y;
+
+x = 10;
+
+x -> é alocado para a Heap da memória
+
+x armazena diretamente o valor e não aponta algum local da memória Heap
+
+y = x;
+
+y recebe uma cópia de x
+
+Valores padrão
+
+Quando alocamos (new) qualquer tipo estruturado (classe ou array), são atribuídos valores padrão aos seus elementos
+
+- números: 0
+- boolean: false
+- char: caractere código 0
+- objeto: null
+
+-------------------------------------------------------
+
+Desalocação de memória - garbage collector e escopo local
+
+Garbage collector
+
+É um processo que automatiza o gerenciamento de memória de um programa em execução
+
+O garbage collector monitora os objetos alocados dinamicamente pelo programa (no heap), desalocando aqueles que não estão mais sendo utilizados.
+
+Resumo 
+
+Objetos alocados dinamicamente, quando não possuem mais referência para eles, serão desalocados pelo garbage collector
+
+variáveis locais são desalocadas imediatamente assim que seu escopo local sai de execução
+
+--------------------------------------------------------
+
+Vetores
+
+Em programação, "vetor" é o nome dado a arranjos unidimensionais
+
+Arranjo (array) é uma estrutura de ados:
+- Homogênea (dados do mesmo tipo)
+- Ordenada (elementos acessados por meio de posições)
+- Alocada de uma vez só, em um bloco contíguo de memória
+
+Vantagens:
+- Acesso imediato aos elementos pela sua posição
+
+Desvantagens:
+- Tamanho fixo
+- Dificuldade para ser realizar inserções e deleções
+
+Declarar vetor em java -> "tipo dos dados"[] "nome da variavel" = new "tipo dos dados"[tamanho do vetor];
+
+adicionar elementos no vetor -> "nome da variavel"[posicao no vetor]
+
+tamanho do vetor, propriedade do vetor -> "nome do vetor".length
+
+--------------------------------------------------------
+
+Boxing
+
+É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível
+
+Wrapper classes
+
+- São classes equivalentes aos tipos primitivos
+
+- Boxing e unboxing é natural na linguagem
+
+Uso comum: campos de entidades em sistemas de informação (IMPORTANTE!)
+- Pois tipos referência (classes) aceitam valor null e usufruem dos recursos OO
+
+Exemplo 
+
+public class Product {
+
+	public String name;
+	oublic Double price;
+	public Integer quantity;
+}
+
+Desse modo, os atributos name, price e quantity podem receber null como valor, pois classes são valores referência (estão referenciando null na memória heap)
+
+--------------------------------------------------------
+
+Laço "for each"
+
+Sintaxe opcional e simplificada para percorrer coleções
+
+Sintaxe:
+
+for(Tipo apelido: coleção) {
+	<comando 1>	
+	<comando 2>
+}
+
+Exemplo:
+
+String[] vect = new String[] {"Maria", "Bob", "Alex"};
+ 
+for (String obj: vect) {
+    System.out.println(obj);
+} 
+
+---------------------------------------------------------
+
+Listas
+
+Lista é uma estrutura de dados
+- Homogênea (dados do mesmo tipo)
+- Ordenada (elementos acessados por meio de posições)
+- Inicia vazia, e seus elementos são alocados sob demanda
+- Cada elemento ocupa um "nó" (ou nodo) da lista
+
+Tipo (interface): List
+- Classes que implementam: ArrayList, LinkedList, etc.
+
+Vantagens:
+- Tamanho variável
+- Facilidade para se realizar inserções e deleções
+
+Desvantagens:
+- Acesso sequencial aos elementos*
+
+-------------------------------------------------------
+
+Listas
+
+forma de declarar:
+
+List<Tipo> list = new ArrayList<Tipo(opcional)>();
+
+list.add(elem) -> adiciona elementos
+list.add(posição, elem) -> adiciona elementos, uma sobrecarga do método add
+list.size() -> devolve o tamanho da lista
+list.remove(elem) -> remove o elemento da lista
+list.removeif(predicado(expressão para a remoção): ex -> x -> x.charAt(0) == 'M')
+list.indexOf(posição do elemento)
+
+-------------------------------------------------------
+
+Matrizes
+
+Em programação, "matriz" é o nome dado a arranjos bidimensionais
+- Atenção: "vetor de vetores"
+
+Arranjo (array) é uma estrutura de dados
+- Homogênea (dados do mesmo tipo)
+- Ordenada (elementos acessados por meio de posições)
+- Alocada de uma vez só, em um bloco contíguo de memória
+
+Vantagens:
+- Acesso imediato aos elementos pela sua posição
+
+Desvantagens:
+- Tamanho fixo
+- Dificuldade para se realizar inserções e deleções
