@@ -1,0 +1,69 @@
+Exceções
+
+Uma exceção é qualquer condição de erro ou comportamento inesperado encontrado por um programa em execução
+
+Em Java, uma exceção é um objeto herdado da classe:
+java.lang.Exception - o compilador obriga a tratar ou propagar
+java.lang.RuntimeException - o compilador não obriga a tratar ou propagar
+
+Quando lançada, uma exceção é propagada na pilha de chamadas de métodos em execução, até que seja capturada (tratada) ou o programa seja encerrado
+
+
+
+
+Estrutura try-catch
+
+Bloco try
+Contem o código que representa a execução normal do trecho de código que pode acarretar em uma exceção
+
+Bloco catch
+Contem o código a ser executado caso uma exceção ocorra
+Deve ser especificado o tipo da exceção a ser tratada (upcasting é permitido)
+
+Demo
+
+Sintaxe 
+
+try {
+
+}
+catch (Exception e) {
+
+}
+catch (Exception e) {
+
+}
+catch (Exception e) {
+
+}
+
+
+
+
+
+Pilha de chamadas de métodos (stack trace)
+
+Mostra a sequencia de chamadas de métodos até o ponto em que a exceção foi acarretada
+
+
+
+
+
+Bloco finally
+
+É um bloco que contém código a ser executado independentemente de ter ocorrido ou não uma exceção
+
+Exemplo clássico: fechar um arquivo, conexão de banco de dados, ou outro recurso específico ao final do processamento.
+
+Sintaxe: 
+
+try {
+
+}
+catch (Exception e) {
+
+}
+finally {
+
+}
+
