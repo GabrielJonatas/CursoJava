@@ -1,0 +1,37 @@
+Interface
+
+Interface é um tipo que define um conjunto de operações que uma classe deve implementar
+
+A interface estabelece um contrato que a classe deve cumprir.
+
+Por que interfaces?
+- Para criar sistemas com baixo acoplamento e flexíveis
+
+Inversão de controle
+
+Inversão de controle
+- Padrão de desenvolvimento que consiste em retirar da classe a responsabilidade de instanciar suas dependências
+
+Injeção de dependência
+- É uma forma de realizar a inversão de controle: um componente externo instancia a dependência, que é então injetada no objeto "pai". Pode ser implementada de várias formas:
+- Construtor
+- Classe de instanciação(builder/factory)
+- Container/framework
+
+Aspectos em comum entre herança e interfaces
+
+- Relação é-um
+- Generalização/especialização
+- Polimorfismo
+
+Problema do diamente
+
+A herança múltipla pode gerar o problema do diamante: uma ambiguidade causada pela existência do mesmo método em mais de uma superclasse.
+
+Herança múltipla não é permitida na maioria das linguagens!
+
+Interface comparable
+
+public interface Comparable<T> {
+	int compareTo(T o);
+}
